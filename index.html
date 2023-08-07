@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>ID Card Web | Codo A Codo</title>
+</head>
+<body class="relative bg-[url('https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')] bg-no-repeat bg-cover grid place-content-center min-h-screen">
+  <div class="absolute inset-0 bg-[#3047af]/70"></div>  
+  <main class="w-[350px] sm:w-[550px] mx-auto flex flex-col sm:flex-row items-center gap-4 backdrop-blur-md bg-white/30 rounded-md drop-shadow-md p-10 sm:gap-10">
+        <section class="p-2 sm:order-2 sm:w-2/5">
+          <div class="bg-gradient-to-br from-[#3047af] to-[#6e87f5] rounded-full w-28 h-28 overflow-hidden flex items-center justify-center drop-shadow-md">
+            <div class="bg-white/60 w-[106px] h-[106px] rounded-full flex items-center justify-center overflow-hidden">
+              <img src="profilePic.png" alt="Carla Sottosanti" class="w-28">
+            </div>
+          </div>
+        </section>
+        <section class=" text-center space-y-4 sm:order-1 sm:px-4 sm:3/5">
+            <h2 class="text-2xl text-[#3047af] font-bold">Carla Sottosanti</h2>
+            <p class="text-xs font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, atque veritatis, vero adipisci , consectetur adipisicing elit..</p>
+            <button class="w-full py-2 text-sm rounded-md drop-shadow-sm bg-[#3047af] text-slate-400 outline outline-transparent hover:outline-[#3047af] hover:bg-transparent hover:text-[#3047af] transition-all duration-200 ease-in-out">Contacto</button>
+        </section>
+    </main>
+</body>
+</html>
